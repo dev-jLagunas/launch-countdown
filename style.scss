@@ -1,0 +1,42 @@
+/**********************************
+----- CSS Reset -----
+***********************************/
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/**********************************
+----- Variables -----
+***********************************/
+
+// Primary Colors
+$grayish-blue: hsl(237, 18%, 59%);
+$soft-red: hsl(345, 95%, 68%);
+
+// Neutral Colors
+$white: hsl(0, 0%, 100%);
+$dark-desaturated-blue: hsl(236, 21%, 26%);
+$very-dark-blue: hsl(235, 16%, 14%);
+$very-dark-black-blue: hsl(234, 17%, 12%);
+
+/**********************************
+----- Global Styles -----
+***********************************/
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+}
+
+/*************************************************
+----- Clock Project Styles - Mobile First -----
+**************************************************/
+
+.main-container {
+  border: 4px solid red;
+  height: 100vh;
+  background-image: url();
+}
