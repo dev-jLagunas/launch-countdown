@@ -42,7 +42,8 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
+  padding-top: 10rem;
   align-items: center;
 
   &::after {
@@ -79,6 +80,10 @@ body {
 .tick-group {
   text-align: center;
   margin: 0 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .tick-label {
@@ -86,15 +91,54 @@ body {
   font-size: 0.6rem;
   font-weight: 300;
   text-transform: uppercase;
+  margin-top: 1rem;
 }
 
 .tick-flip {
   margin-top: 3rem;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .tick-flip-panel {
   border-radius: 0.3rem;
   background-color: $dark-desaturated-blue;
+}
+
+#dateForm {
+  color: $white;
+  margin-bottom: 2rem;
+  display: grid;
+  place-items: center;
+}
+
+.input-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+#date-input {
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  border: 0;
+  margin-block: 0.1rem;
+  color: $white;
+  background-color: $very-dark-blue;
+}
+
+.submit-btn {
+  background-color: transparent;
+  color: $soft-red;
+
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
 }
 
 .bottom-wrapper {
@@ -123,6 +167,11 @@ body {
   color: $grayish-blue;
 }
 
+.icon:hover {
+  color: $soft-red;
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .tick {
     width: 70vw;
@@ -143,10 +192,6 @@ body {
 
   .sns-wrapper {
     width: 25%;
-  }
-
-  .icon {
-    font-size: 1rem;
   }
 }
 
