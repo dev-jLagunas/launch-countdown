@@ -1,10 +1,12 @@
 import "./style.scss";
 
+//Select DOM Elements
+const dateInput = document.getElementById("date-input");
+const submitBtn = document.querySelector(".submit-btn");
+
+// Declare variables
 let tick;
 let countdown;
-
-const dateInput = document.querySelector('input[type="date"]');
-const submitButton = document.querySelector('button[type="submit"]');
 
 // Set the initial value of the date input to the initial countdown date
 dateInput.value = "2024-04-23";
@@ -27,7 +29,7 @@ function startCountdown(date) {
   };
 }
 
-submitButton.addEventListener("click", function (event) {
+submitBtn.addEventListener("click", function (event) {
   event.preventDefault();
 
   // Create a new tick instance with the updated countdown date
