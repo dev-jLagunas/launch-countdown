@@ -43,7 +43,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  padding-top: 7rem;
+  padding-top: 4rem;
   align-items: center;
 
   //Background "Nighttime Fog" Effect
@@ -205,6 +205,10 @@ body {
 **************************************************/
 
 @media (min-width: 1440px) {
+  .main-container {
+    padding-top: 7rem;
+  }
+
   .tick {
     width: 50vw;
   }
