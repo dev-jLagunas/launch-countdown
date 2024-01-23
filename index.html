@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;700&display=swap"
       rel="stylesheet"
     />
 
@@ -44,7 +44,68 @@
   </head>
   <body>
     <!-- Main Container -->
-    <main class="main-container"></main>
+    <main class="main-container">
+      <header>
+        <h1 class="header-title">WE'RE LAUNCHING SOON</h1>
+      </header>
+      <section class="section-wrapper">
+        <div class="tick" data-did-init="handleTickInit">
+          <div
+            data-repeat="true"
+            data-layout="horizontal fit"
+            data-transform="preset(d, h, m, s) -> delay"
+          >
+            <div class="tick-group days">
+              <div
+                data-key="value"
+                data-repeat="true"
+                data-transform="pad(00) -> split -> delay"
+              >
+                <span data-view="flip"></span>
+              </div>
+              <span data-key="label" data-view="text" class="tick-label"></span>
+            </div>
+            <div class="tick-group hours">
+              <div
+                data-key="value"
+                data-repeat="true"
+                data-transform="pad(00) -> split -> delay"
+              >
+                <span data-view="flip"></span>
+              </div>
+              <span data-key="label" data-view="text" class="tick-label"></span>
+            </div>
+            <div class="tick-group minutes">
+              <div
+                data-key="value"
+                data-repeat="true"
+                data-transform="pad(00) -> split -> delay"
+              >
+                <span data-view="flip"></span>
+              </div>
+              <span data-key="label" data-view="text" class="tick-label"></span>
+            </div>
+            <div class="tick-group seconds">
+              <div
+                data-key="value"
+                data-repeat="true"
+                data-transform="pad(00) -> split -> delay"
+              >
+                <span data-view="flip"></span>
+              </div>
+              <span data-key="label" data-view="text" class="tick-label"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="bottom-wrapper">
+        <div class="sns-wrapper">
+          <i class="fa-brands fa-square-facebook icon"></i>
+          <i class="fa-brands fa-pinterest icon"></i>
+          <i class="fa-brands fa-instagram icon"></i>
+        </div>
+      </div>
+    </main>
     <!-- Scripts -->
     <script type="module" src="/main.js"></script>
     <script src="https://unpkg.com/@pqina/flip/dist/flip.min.js"></script>

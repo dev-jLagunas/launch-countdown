@@ -36,7 +36,126 @@ body {
 **************************************************/
 
 .main-container {
-  border: 4px solid red;
   height: 100vh;
-  background-image: url();
+  background-color: $very-dark-black-blue;
+  background-image: url("/images/bg-stars.svg");
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgb(67, 45, 108), transparent);
+    z-index: 0;
+    opacity: 0.5;
+  }
+}
+
+.header-title {
+  color: $white;
+  text-align: center;
+  font-size: 1.7em;
+  padding-inline: 0.1rem;
+  letter-spacing: 5px;
+}
+
+.tick {
+  width: 90vw;
+  margin-inline: auto;
+}
+
+.tick-group .tick-flip .tick-flip-panel-front,
+.tick-group .tick-flip .tick-flip-panel-back {
+  color: $soft-red;
+  font-weight: 700;
+}
+
+.tick-group {
+  text-align: center;
+  margin: 0 0.2rem;
+}
+
+.tick-label {
+  color: $white;
+  font-size: 0.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.tick-flip {
+  margin-top: 3rem;
+}
+
+.tick-flip-panel {
+  border-radius: 0.3rem;
+  background-color: $dark-desaturated-blue;
+}
+
+.bottom-wrapper {
+  background-image: url("/images/pattern-hills.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 30%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.sns-wrapper {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+
+.icon {
+  font-size: 2rem;
+  color: $grayish-blue;
+}
+
+@media (min-width: 768px) {
+  .tick {
+    width: 70vw;
+  }
+
+  .tick-label {
+    font-size: 1rem;
+  }
+
+  .tick-flip {
+    margin-top: 4rem;
+    margin-bottom: -2rem;
+  }
+
+  .tick-flip-panel {
+    border-radius: 0.4rem;
+  }
+
+  .sns-wrapper {
+    width: 25%;
+  }
+
+  .icon {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .tick {
+    width: 50vw;
+  }
+
+  .tick-flip-panel {
+    border-radius: 0.9rem;
+  }
 }
